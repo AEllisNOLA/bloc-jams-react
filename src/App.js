@@ -9,17 +9,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>Bloc Jams</header>
+        <header>
+          Bloc Jams
+        </header>
+
         <nav>
           <Link to="/">Landing</Link>
           <Link to="/library">Library</Link>
           <Link to="/album">Album</Link>
         </nav>
+
         <main>
           <Route exact path='/' component={Landing} />
           <Route path="/library" component={Library} />
           <Route path="/album" component={Album}></Route>
         </main>
+        
       </div>
     );
   }
