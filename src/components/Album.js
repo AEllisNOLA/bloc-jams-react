@@ -34,15 +34,18 @@ class Album extends Component {
         this.setState({ currentSong: song });
     }
 
-    handleSongClick(song) {
+    handleSongClick(song, album) {
         const isSameSong = this.state.currentSong === song;
+        
         if (this.state.isPlaying && isSameSong) {
             this.pause();
         } else {
-            if (!isSameSong) {this.setSong(song);}
+            if (!isSameSong) { this.setSong(song); }
             this.play();
         }
     }
+
+
     render() {
         return (
             <section className="album">
