@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.item {
+  font-size: 16px;
+}
+
+#logo {
+  font-size: 30px;
+}
+
+#hero-section {
+  background: url(./img/concert-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 100px;
+}
+
+h1 {
+  color: #ef407c;
+  font-family: "Permanent Marker", cursive;
+  font-size: 64px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Metrophobic", sans-serif;
+  color: white;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #ef407c;
+  font-family: "Metrophobic", sans-serif;
+  margin-bottom: 0;
+}
+
+.hero-title {
+  padding-top: 40px;
+}
+
+.point {
+  padding-top: 50px;
+}

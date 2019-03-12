@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
-import "./App.css";
+import "./styles/App.css";
 import Landing from "./components/Landing";
 import Library from "./components/Library";
 import Album from "./components/Album";
@@ -10,12 +10,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="ui container">
-          <nav className="ui fixed inverted menu">
+          <nav className="ui fixed borderless inverted menu">
             <Link className="item" to="/">
               <img
-                style={{ "font-size": 30 }}
+                id="logo"
                 className="logo"
-                src={require("./logo/bloc_jams_logo.png")}
+                src={require("./styles/img/bloc_jams_logo.png")}
                 alt="Bloc Jams logo"
               />
             </Link>
@@ -25,6 +25,16 @@ class App extends Component {
             <Link className="item" to="/album">
               Album
             </Link>
+            <div className="right menu">
+            <Link className="item" to="/log-in">
+              Log In
+            </Link>
+            <Link className="item" to="/sign-up">
+              Sign Up
+            </Link>
+
+             
+            </div>
           </nav>
         </header>
 
